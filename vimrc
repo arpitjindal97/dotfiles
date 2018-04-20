@@ -5,9 +5,12 @@ filetype plugin indent on
 set relativenumber
 
 set autoindent
+set softtabstop=4
 set tabstop=4
 set shiftwidth=4
 set expandtab
+
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
 " ======================== nerdtree ========================
 
@@ -33,8 +36,10 @@ let NERDTreeShowHidden=1
 
 let g:airline#extensions#hunks#enabled=0
 let g:airline#extensions#branch#enabled=1
-let g:airline_section_b = airline#section#create(['branch'])
+let g:airline_section_b = airline#section#create(['hunks','branch'])
 let g:airline_section_y = 'BN: %{bufnr("%")}'
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#formatter = 'unique_tail'
 
 " ==================== vim-airline-themes ======================
 
@@ -51,3 +56,4 @@ colorscheme solarized
 
 let g:indentLine_char = '│'
 let g:indentLine_color_term = 239
+
