@@ -22,6 +22,10 @@ Update your plugins once in a week or two.
     git submodules foreach git pull
     git submodule update
 
+## Screenshot
+
+![Vim screenshot](screenshot.png?raw=true)
+
 ## Plugins used
 
 - [github.com/scrooloose/nerdtree](https://github.com/scrooloose/nerdtree.git)
