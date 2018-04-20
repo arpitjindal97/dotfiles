@@ -32,4 +32,4 @@ Update your plugins once in a week or two.
 - [github.com/altercation/vim-colors-solarized](https://github.com/altercation/vim-colors-solarized.git)
 - [github.com/fatih/vim-go](https://github.com/fatih/vim-go.git)
 - [github.com/godlygeek/tabular](https://github.com/godlygeek/tabular.git)
-- [github.com/plasticboy/vim-markdown](https://github.com/plasticboy/vim-markdown.git)
+- [github.com/mhinz/vim-signify](https://github.com/plasticboy/vim-markdown.git)
