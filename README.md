@@ -7,6 +7,13 @@ This repo contains my vim dotfiles. Use below command to get started quickly
     ln -sf .vimrc .vim/vimrc
     git submodule update --init
 
+## Fonts
+
+Install powerline fonts if you are using vim on xterm, gnome-terminal, xfce4-terminal, etc.
+
+Main repo is https://github.com/powerline/fonts but you can install it from your respective package manager.
+Just find the correct package name for your ditro. 
+
 ## Update Plugins
 
 Update your plugins once in a week or two.
