@@ -17,7 +17,7 @@ Update your plugins once in a week or two.
 
 ## Plugins used
 
-- [ngithub.com/scrooloose/nerdtree](https://github.com/scrooloose/nerdtree.git)
+- [github.com/scrooloose/nerdtree](https://github.com/scrooloose/nerdtree.git)
 - [github.com/Xuyuanp/nerdtree-git-plugin](https://github.com/Xuyuanp/nerdtree-git-plugin.git)
 - [github.com/elzr/vim-json](https://github.com/elzr/vim-json.git)
 - [github.com/vim-airline/vim-airline](https://github.com/vim-airline/vim-airline.git)
