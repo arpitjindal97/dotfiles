@@ -1,48 +1,54 @@
-[submodule "bundle/nerdtree"]
-	path = bundle/nerdtree
+[submodule ".tmux/plugins/tpm"]
+	path = .tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm
+[submodule ".tmux/plugins/tmux-better-mouse-mode"]
+	path = .tmux/plugins/tmux-better-mouse-mode
+    url = https://github.com/NHDaly/tmux-better-mouse-mode
+[submodule ".vim/bundle/nerdtree"]
+	path = .vim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
-[submodule "bundle/nerdtree-git-plugin"]
-	path = bundle/nerdtree-git-plugin
+[submodule ".vim/bundle/nerdtree-git-plugin"]
+	path = .vim/bundle/nerdtree-git-plugin
 	url = https://github.com/Xuyuanp/nerdtree-git-plugin.git
-[submodule "bundle/vim-json"]
-	path = bundle/vim-json
+[submodule ".vim/bundle/vim-json"]
+	path = .vim/bundle/vim-json
 	url = https://github.com/elzr/vim-json.git
-[submodule "bundle/vim-airline"]
-	path = bundle/vim-airline
+[submodule ".vim/bundle/vim-airline"]
+	path = .vim/bundle/vim-airline
 	url = https://github.com/vim-airline/vim-airline.git
-[submodule "bundle/vim-airline-themes"]
-	path = bundle/vim-airline-themes
+[submodule ".vim/bundle/vim-airline-themes"]
+	path = .vim/bundle/vim-airline-themes
     url = https://github.com/vim-airline/vim-airline-themes
-[submodule "bundle/vim-gitgutter"]
-	path = bundle/vim-gitgutter
+[submodule ".vim/bundle/vim-gitgutter"]
+	path = .vim/bundle/vim-gitgutter
 	url = git://github.com/airblade/vim-gitgutter.git
-[submodule "bundle/vim-fugitive"]
-	path = bundle/vim-fugitive
+[submodule ".vim/bundle/vim-fugitive"]
+	path = .vim/bundle/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive
-[submodule "bundle/ctrlp"]
-	path = bundle/ctrlp
+[submodule ".vim/bundle/ctrlp"]
+	path = .vim/bundle/ctrlp
 	url = https://github.com/ctrlpvim/ctrlp.vim
-[submodule "bundle/auto-pairs"]
-	path = bundle/auto-pairs
+[submodule ".vim/bundle/auto-pairs"]
+	path = .vim/bundle/auto-pairs
 	url = https://github.com/jiangmiao/auto-pairs
-[submodule "bundle/vim-surround"]
-	path = bundle/vim-surround
+[submodule ".vim/bundle/vim-surround"]
+	path = .vim/bundle/vim-surround
 	url = https://github.com/tpope/vim-surround
-[submodule "bundle/indentLine"]
-	path = bundle/indentLine
+[submodule ".vim/bundle/indentLine"]
+	path = .vim/bundle/indentLine
 	url = https://github.com/Yggdroot/indentLine
-[submodule "bundle/vim-better-whitespace"]
-	path = bundle/vim-better-whitespace
+[submodule ".vim/bundle/vim-better-whitespace"]
+	path = .vim/bundle/vim-better-whitespace
 	url = https://github.com/ntpeters/vim-better-whitespace
-[submodule "bundle/vim-colors-solarized"]
-	path = bundle/vim-colors-solarized
+[submodule ".vim/bundle/vim-colors-solarized"]
+	path = .vim/bundle/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
-[submodule "bundle/vim-go"]
-	path = bundle/vim-go
+[submodule ".vim/bundle/vim-go"]
+	path = .vim/bundle/vim-go
 	url = https://github.com/fatih/vim-go.git
-[submodule "bundle/tabular"]
-	path = bundle/tabular
+[submodule ".vim/bundle/tabular"]
+	path = .vim/bundle/tabular
 	url = https://github.com/godlygeek/tabular
-[submodule "bundle/vim-signify"]
-	path = bundle/vim-signify
+[submodule ".vim/bundle/vim-signify"]
+	path = .vim/bundle/vim-signify
 	url = https://github.com/mhinz/vim-signify.git
