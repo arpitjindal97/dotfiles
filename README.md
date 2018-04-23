@@ -19,7 +19,8 @@ Just find the correct package name for your ditro.
 Update your plugins once in a week or two.
 
     cd ~/.vim
-    git submodule update --recursive --remote
+    git submodule foreach git pull origin master
+    git submodule update
 
 ## Screenshot
 
