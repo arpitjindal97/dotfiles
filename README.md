@@ -1,15 +1,18 @@
-# .vim
+# dotfiles
 
-This repo contains my vim dotfiles. Use below command to get started quickly
+This repo contains my dotfiles. Use below command to get started quickly
 
     cd ~
-    git clone --recursive https://github.com/arpitjindal97/.vim.git .vim
-    ln -sf .vimrc .vim/vimrc
+    git clone --recursive https://github.com/arpitjindal97/dotfiles.git dotfiles
+    ln -sf .vimrc dotfiles/vimrc
+    ln -sf .vim dotfiles/.vim
+    ln -sf .tmux.conf dotfiles/tmux.conf
+    ln -sf .tmux dotfiles/.tmux
     git submodule update --init
 
 ## Fonts
 
-Install powerline fonts if you are using vim on xterm, gnome-terminal, xfce4-terminal, etc.
+Install powerline fonts if you are using xterm, gnome-terminal, xfce4-terminal, etc.
 
 Main repo is https://github.com/powerline/fonts but you can install it from your respective package manager.
 Just find the correct package name for your ditro. 
@@ -18,7 +21,7 @@ Just find the correct package name for your ditro.
 
 Update your plugins once in a week or two.
 
-    cd ~/.vim
+    cd ~/dotfiles
     git submodule foreach git pull origin master
     git submodule update
 
@@ -26,7 +29,7 @@ Update your plugins once in a week or two.
 
 ![Vim screenshot](screenshot.png?raw=true)
 
-## Plugins used
+## Plugins used in Vim
 
 - [github.com/scrooloose/nerdtree](https://github.com/scrooloose/nerdtree.git)
 - [github.com/Xuyuanp/nerdtree-git-plugin](https://github.com/Xuyuanp/nerdtree-git-plugin.git)
