@@ -13,12 +13,16 @@ This repo contains my dotfiles. Use below command to get started quickly
 
 ## Fonts
 
-Install powerline fonts if you are using xterm, gnome-terminal, xfce4-terminal, etc.
+- [github.com/powerline/fonts](https://www.archlinux.org/packages/community/x86_64/powerline-fonts/)
+- [github.com/belluzj/fantasque-sans](https://aur.archlinux.org/packages/ttf-fantasque-sans-mono/)
 
-Main repo is https://github.com/powerline/fonts but you can install it from your respective package manager.
-Just find the correct package name for your ditro. 
+## Tools Used
 
-## Update Plugins
+- [Termite](https://github.com/thestinger/termite/)
+- [Vim](https://github.com/vim/vim)
+- [Tmux](https://github.com/tmux/tmux)
+
+## Update Vim Plugins
 
 Update your plugins once in a week or two.
 
@@ -48,3 +52,4 @@ Update your plugins once in a week or two.
 - [github.com/fatih/vim-go](https://github.com/fatih/vim-go.git)
 - [github.com/godlygeek/tabular](https://github.com/godlygeek/tabular.git)
 - [github.com/mhinz/vim-signify](https://github.com/plasticboy/vim-markdown.git)
+
