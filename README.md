@@ -8,7 +8,7 @@ This repo contains my dotfiles. Use below command to get started quickly
     ln -sf dotfiles/.vim .vim
     ln -sf dotfiles/tmux.conf .tmux.conf
     ln -sf dotfiles/.tmux .tmux
-    ln -sf dotfiles/Xdefaults .Xdefaults
+    ln -sf ~/dotfiles/termite ~/.config/termite
     git submodule update --init
 
 ## Fonts
