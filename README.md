@@ -4,10 +4,11 @@ This repo contains my dotfiles. Use below command to get started quickly
 
     cd ~
     git clone --recursive https://github.com/arpitjindal97/dotfiles.git dotfiles
-    ln -sf .vimrc dotfiles/vimrc
-    ln -sf .vim dotfiles/.vim
-    ln -sf .tmux.conf dotfiles/tmux.conf
-    ln -sf .tmux dotfiles/.tmux
+    ln -sf dotfiles/vimrc .vimrc
+    ln -sf dotfiles/.vim .vim
+    ln -sf dotfiles/tmux.conf .tmux.conf
+    ln -sf dotfiles/.tmux .tmux
+    ln -sf dotfiles/Xdefaults .Xdefaults
     git submodule update --init
 
 ## Fonts

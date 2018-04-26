@@ -44,4 +44,28 @@ URxvt.letterSpace: 0
 
 URxvt.geometry: 96x23
 
+! do not scroll with output
+URxvt*scrollTtyOutput: false
+
+! scroll in relation to buffer (with mouse scroll or Shift+Page Up)
+URxvt*scrollWithBuffer: true
+
+! scroll back to the bottom on keypress
+URxvt*scrollTtyKeypress: true
+
 URxvt*scrollstyle: plain
+
+! default
+URxvt.termName: rxvt-unicode-256color
+
+URxvt*cursorBlink: true
+
+URxvt*iso14755: false
+
+URxvt.intensityStyles: true
+
+URxvt.mapAlert: true
+
+URxvt.visualBell: true
+
+
