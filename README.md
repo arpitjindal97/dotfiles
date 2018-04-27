@@ -20,7 +20,8 @@ This repo contains my dotfiles. Use below command to get started quickly
 
 - [Termite](https://github.com/thestinger/termite/)
 - [Vim](https://github.com/vim/vim)
-- [Tmux](https://github.com/tmux/tmux)
+- [tmux](https://github.com/tmux/tmux)
+- [xsel](https://github.com/kfish/xsel)
 
 ## Update Vim Plugins
 

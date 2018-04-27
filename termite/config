@@ -3,7 +3,7 @@ allow_bold = true
 #audible_bell = false
 clickable_url = true
 dynamic_title = true
-font = Fantasque Sans Mono 9.5
+font = FantasqueSansMono 9.5
 #fullscreen = true
 geometry = 680x320
 #icon_name = terminal
@@ -52,7 +52,7 @@ background = rgba(6, 6, 6, 0.95)
 #background      = #1d1f21
 
 # If unset, will reverse foreground and background
-highlight = #2f2f2f
+# highlight = #2f2f2f
 
 # Colors from color0 to color254 can be set
 # 16 color space
