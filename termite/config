@@ -3,7 +3,7 @@ allow_bold = true
 #audible_bell = false
 clickable_url = true
 dynamic_title = true
-font = Fantasque Sans Mono 10
+font = Fantasque Sans Mono 9.5
 #fullscreen = true
 geometry = 680x320
 #icon_name = terminal
@@ -21,10 +21,10 @@ scrollback_lines = 10000
 browser = xdg-open
 
 # "system", "on" or "off"
-#cursor_blink = system
+cursor_blink = system
 
 # "block", "underline" or "ibeam"
-#cursor_shape = block
+cursor_shape = block
 
 # Hide links that are no longer valid in url select overlay mode
 #filter_unmatched_urls = true
@@ -48,7 +48,7 @@ foreground      = #c5c8c6
 foreground_bold = #e0e0e0
 
 # 20% background transparency (requires a compositor)
-background = rgba(28, 28, 28, 0.9)
+background = rgba(6, 6, 6, 0.95)
 #background      = #1d1f21
 
 # If unset, will reverse foreground and background
@@ -106,4 +106,4 @@ color21 = #e0e0e0
 #border_width = 0.5
 #roundness = 2.0
 
-# vim: ft=dosini cms=#%s
+
