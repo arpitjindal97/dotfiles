@@ -29,9 +29,9 @@ This repo contains my dotfiles. Use below command to get started quickly
 
 Vim plugins are cloned as submodules. Update them once in a week.
 
-cd ~/dotfiles
-git submodule foreach git pull origin master
-git submodule update
+    cd ~/dotfiles
+    git submodule foreach git pull origin master
+    git submodule update
 
 ## Screenshot
 
