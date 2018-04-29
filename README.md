@@ -58,7 +58,7 @@ git submodule update
 
 ## Keybindings
 
-###Tmux
+### Tmux
 
 | Key Combination | Function                           |
 | --------------- | --------                           |
@@ -81,7 +81,7 @@ git submodule update
 
 Rest all other key binding are samme. I am also using [hdaly/tmux-better-mouse-mode](https://github.com/hdaly/tmux-better-mouse-mode) plugin for easy mouse movements
 
-###Vim
+### Vim
 
 | Key | Function           |
 | --- | --------           |
