@@ -10,6 +10,7 @@ This repo contains my dotfiles. Use below command to get started quickly
     ln -sf dotfiles/.tmux .tmux
     ln -sf ~/dotfiles/termite ~/.config/termite
     ln -sf ~/dotfiles/fontconfig ~/.config/fontconfig
+    ln -sf ~/dotfiles/zshrc .zshrc
     git submodule update --init
 
 ## Fonts
