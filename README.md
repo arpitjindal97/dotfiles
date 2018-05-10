@@ -21,7 +21,7 @@ This repo contains my dotfiles. Use below command to get started quickly
 ## Tools Used
 
 - [Termite](https://github.com/thestinger/termite/)
-- [Vim](https://github.com/vim/vim)
+- [Gvim](https://github.com/vim/vim)
 - [tmux](https://github.com/tmux/tmux)
 - [xsel](https://github.com/kfish/xsel)
 - [zsh](https://github.com/zsh-users/zsh)
