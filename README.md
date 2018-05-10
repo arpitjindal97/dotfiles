@@ -4,14 +4,8 @@ This repo contains my dotfiles. Use below command to get started quickly
 
     cd ~
     git clone --recursive https://github.com/arpitjindal97/dotfiles.git dotfiles
-    ln -sf dotfiles/vimrc .vimrc
-    ln -sf dotfiles/.vim .vim
-    ln -sf dotfiles/tmux.conf .tmux.conf
-    ln -sf dotfiles/.tmux .tmux
-    ln -sf ~/dotfiles/termite ~/.config/termite
-    ln -sf ~/dotfiles/fontconfig ~/.config/fontconfig
-    ln -sf ~/dotfiles/zshrc .zshrc
-    git submodule update --init
+    cd dotfiles
+    make install
 
 ## Fonts
 
@@ -31,8 +25,7 @@ This repo contains my dotfiles. Use below command to get started quickly
 Vim plugins are cloned as submodules. Update them once in a week.
 
     cd ~/dotfiles
-    git submodule foreach git pull origin master
-    git submodule update
+    make update
 
 ## Screenshot
 

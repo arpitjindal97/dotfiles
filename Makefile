@@ -9,7 +9,7 @@ install:
 	ln -sf zshrc ~/.zshrc
 	git submodule update --init
 
-
 update:
+	git pull origin master
 	git submodule foreach git pull origin master
 	git submodule update
