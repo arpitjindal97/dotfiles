@@ -37,6 +37,10 @@ export GOPATH="$HOME/go"
 export GOBIN="$GOPATH/bin"
 export PATH="$GOBIN:$PATH"
 export PICTURES="$HOME/Pictures"
+export QT_SELECT=5
+export QT_PKG_CONFIG=true
+export NPM_CONFIG_PREFIX="$HOME/npm-global"
+export PATH="$NPM_CONFIG_PREFIX/bin:$PATH"
 
 zstyle ':completion:*' rehash true
 setopt prompt_sp

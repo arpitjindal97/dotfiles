@@ -13,9 +13,6 @@ set expandtab
 set nostartofline
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
-" copy to clipboard
-set clipboard=unnamedplus
-
 " ======================== nerdtree ========================
 
 autocmd vimenter * NERDTree
