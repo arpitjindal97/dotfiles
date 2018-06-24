@@ -1,12 +1,12 @@
 .PHONY: install
 install:
-	ln -sf vimrc ~/.vimrc
-	ln -sf .vim ~/.vim
-	ln -sf tmux.conf ~/.tmux.conf
-	ln -sf .tmux ~/.tmux
-	ln -sf termite ~/.config/termite
-	ln -sf fontconfig ~/.config/fontconfig
-	ln -sf zshrc ~/.zshrc
+	ln -sf ${PWD}/vimrc ~/.vimrc
+	ln -sf ${PWD}/.vim ~/.vim
+	ln -sf ${PWD}/tmux.conf ~/.tmux.conf
+	ln -sf ${PWD}/.tmux ~/.tmux
+	ln -sf ${PWD}/termite ~/.config/termite
+	ln -sf ${PWD}/fontconfig ~/.config/fontconfig
+	ln -sf ${PWD}/zshrc ~/.zshrc
 	git submodule update --init
 
 update:
