@@ -9,8 +9,9 @@ This repo contains my dotfiles. Use below command to get started quickly
 
 ## Fonts
 
-- [github.com/powerline/fonts](https://www.archlinux.org/packages/community/x86_64/powerline-fonts/)
-- [github.com/belluzj/fantasque-sans](https://aur.archlinux.org/packages/ttf-fantasque-sans-mono/)
+- [github.com/powerline/fonts.git](https://www.archlinux.org/packages/community/x86_64/powerline-fonts/)
+- [github.com/belluzj/fantasque-sans.git](https://aur.archlinux.org/packages/ttf-fantasque-sans-mono/)
+- [pagure.io/liberation-fonts.git](https://www.archlinux.org/packages/community/any/ttf-liberation/)
 
 ## Tools Used
 
