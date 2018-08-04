@@ -44,6 +44,7 @@ export PATH="$NPM_CONFIG_PREFIX/bin:$PATH"
 
 zstyle ':completion:*' rehash true
 setopt prompt_sp
+setopt interactivecomments
 
 export GPG_TTY=$(tty)
 
