@@ -7,6 +7,14 @@ This repo contains my dotfiles. Use below command to get started quickly
     cd dotfiles
     make install
 
+## Prerequisite
+
+Install below tools first before cloning the repo
+
+- `zsh`
+- `xsel`
+- `gvim`
+
 ## Fonts
 
 - [github.com/powerline/fonts.git](https://www.archlinux.org/packages/community/x86_64/powerline-fonts/)
