@@ -57,3 +57,5 @@ colorscheme solarized
 let g:indentLine_char = '│'
 let g:indentLine_color_term = 239
 
+" ========================= vim-go =============================
+let g:go_version_warning = 0
