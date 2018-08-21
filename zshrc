@@ -41,6 +41,7 @@ export QT_SELECT=5
 export QT_PKG_CONFIG=true
 export NPM_CONFIG_PREFIX="$HOME/npm-global"
 export PATH="$NPM_CONFIG_PREFIX/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 
 zstyle ':completion:*' rehash true
 setopt prompt_sp
