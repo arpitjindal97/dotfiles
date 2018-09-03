@@ -23,7 +23,7 @@ Install below tools first before cloning the repo
 
 ## Tools Used
 
-- [Termite](https://github.com/thestinger/termite/)
+- [Termite](https://github.com/thestinger/termite/)/[urxvt](http://software.schmorp.de/pkg/rxvt-unicode.html)
 - [Gvim](https://github.com/vim/vim)
 - [tmux](https://github.com/tmux/tmux)
 - [xsel](https://github.com/kfish/xsel)
