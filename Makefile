@@ -31,7 +31,9 @@ install: remove_old
 	ln -sf ${PWD}/tmux.conf ~/.tmux.conf
 	ln -sf ${PWD}/fonts ~/.fonts
 	ln -sf ${PWD}/zshrc ~/.zshrc
-	@ln -sf ${PWD}/icons/flat-remix/Flat-Remix* ~/.local/share/icons/
+	@ln -sf ${PWD}/icons/flat-remix/Flat-Remix ~/.local/share/icons/
+	@ln -sf ${PWD}/icons/flat-remix/Flat-Remix-Dark ~/.local/share/icons/
+	@ln -sf ${PWD}/icons/flat-remix/Flat-Remix-Light ~/.local/share/icons/
 	@printf "\nCreating Symbolic links for directories\n"
 	ln -s ${PWD}/termite ~/.config/termite
 	ln -s ${PWD}/fontconfig ~/.config/fontconfig
