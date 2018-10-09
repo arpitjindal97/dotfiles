@@ -1,0 +1,41 @@
+URxvt.font: xft:FantasqueSansMono:size=11:xft:PowerlineSymbols
+URxvt.depth: 32
+URxvt.background: rgba:0000/0000/0200/ebaf
+URxvt.foreground: #c5c8c6
+
+URxvt.color0: #1d1f21
+URxvt.color8: #969896
+URxvt.color7: #c5c8c6
+URxvt.color15: #ffffff
+
+URxvt.color1: #CC342B
+URxvt.color9: #CC342B
+
+URxvt.color2: #198844
+URxvt.color10: #198844
+
+URxvt.color3: #FBA922
+URxvt.color11: #FBA922
+
+URxvt.color4: #3971ED
+URxvt.color12: #3971ED
+
+URxvt.color5: #A36AC7
+URxvt.color13: #A36AC7
+
+URxvt.color6: #3971ED
+URxvt.color14: #3971ED
+
+URxvt.scrollBar_right: true
+URxvt.scrollstyle: plain
+urxvt.cursorBlink: true
+urxvt.mouseWheelScrollPage: true
+URxvt.iconName: terminal
+urxvt.geometry: 93x21
+urxvt.tripleclickwords: true
+URxvt.keysym.C-M-c: builtin-string:
+URxvt.keysym.C-M-v: builtin-string:
+URxvt.termName: rxvt-256color
+urxvt.externalBorder: 10
+urxvt.internalBorder: 10
+urxvt.borderColor: #ffffff
