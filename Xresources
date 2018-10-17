@@ -1,4 +1,4 @@
-URxvt.font: xft:FantasqueSansMono:size=11:xft:PowerlineSymbols
+URxvt.font: xft:FantasqueSansMono:size=12:xft:PowerlineSymbols
 URxvt.depth: 32
 URxvt.background: rgba:0000/0000/0200/ebaf
 URxvt.foreground: #c5c8c6
@@ -39,3 +39,4 @@ URxvt.termName: rxvt-256color
 urxvt.externalBorder: 10
 urxvt.internalBorder: 10
 urxvt.borderColor: #ffffff
+
