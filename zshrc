@@ -43,6 +43,8 @@ export NPM_CONFIG_PREFIX="$HOME/npm-global"
 export PATH="$NPM_CONFIG_PREFIX/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 
+eval $(ssh-agent) &> /dev/null
+
 zstyle ':completion:*' rehash true
 setopt prompt_sp
 setopt interactivecomments
