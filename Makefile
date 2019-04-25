@@ -25,7 +25,6 @@ clean:
 	- rm -f ~/.config/fontconfig
 	- rm -f ~/.Xresources
 	@printf "\nRemoving conflicting directories\n"
-	- rm -rf ~/.vim
 	- rm -rf ~/.fonts
 	- rm -rf ~/.local/share/icons/Flat-Remix*
 
@@ -38,7 +37,6 @@ install: $(CONFIG) $(LOCAL_BIN) $(LOCAL_ICONS) clean
 	ln -s ${PWD}/fontconfig ~/.config/fontconfig
 	ln -s ${PWD}/Xresources ~/.Xresources
 	@printf "\nCreating Symbolic links for directories\n"
-	ln -sf ${PWD}/.vim ~/.vim
 	ln -sf ${PWD}/fonts ~/.fonts
 	ln -sf ${PWD}/icons/flat-remix/Flat-Remix ~/.local/share/icons/
 	ln -sf ${PWD}/icons/flat-remix/Flat-Remix-Dark ~/.local/share/icons/
