@@ -1,6 +1,15 @@
-[submodule ".tmux/plugins/tpm"]
-	path = .tmux/plugins/tpm
+[submodule "ohmyzsh"]
+	path = ohmyzsh
+	url = https://github.com/ohmyzsh/ohmyzsh
+[submodule "tmux/plugins/tmux-battery"]
+	path = tmux/plugins/tmux-battery
+	url = https://git::@github.com/tmux-plugins/tmux-battery
+[submodule "tmux/plugins/tpm"]
+	path = tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm
-[submodule ".tmux/plugins/tmux-better-mouse-mode"]
-	path = .tmux/plugins/tmux-better-mouse-mode
-	url = https://github.com/NHDaly/tmux-better-mouse-mode
+[submodule "tmux/plugins/tmux-yank"]
+	path = tmux/plugins/tmux-yank
+	url = https://github.com/tmux-plugins/tmux-yank
+[submodule "zsh/zsh-completions"]
+	path = zsh/zsh-completions
+	url = https://github.com/zsh-users/zsh-completions
