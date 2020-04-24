@@ -41,7 +41,7 @@ function Update() {
     echo "Done"
 }
 
-function UpdateInternals() {
+function UpdateInternal() {
     echo "Updating Submodules..."
     git submodule foreach git pull origin master
     echo "Updating Vim Plugins ..."
@@ -56,6 +56,9 @@ then
 elif [ $1 == "update" ];
 then
     Update
+elif [ $1 == "updateInternal" ];
+then
+    UpdateInternal
 else
     echo "Unknown option"
 fi
