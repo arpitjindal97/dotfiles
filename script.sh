@@ -38,6 +38,7 @@ function Update() {
     echo "Fetching from Upstream"
     git fetch
     git reset --hard origin/master
+    git submodule update
     echo "Done"
 }
 
