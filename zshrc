@@ -102,7 +102,7 @@ bindkey -v
 eval $(ssh-agent) &> /dev/null
 
 export GOPATH="$HOME/go"
-export PATH="$HOME/.local/bin:$GOPATH/bin:$PATH"
+export PATH="$HOME/.local/bin:$GOPATH/bin:/usr/local/opt/go@1.13/bin:$PATH"
 export GPG_TTY=$(tty)
 export LC_ALL=en_US.UTF-8
 
@@ -120,3 +120,4 @@ precmd() {
         PROMPT="%B%F{9}%F{14}%n%F{9}:%F{11}%~%F{10}$(git_branch_info)%F{9}%b%f $ "
 }
 autoload -U compinit && compinit
+unsetopt share_history
