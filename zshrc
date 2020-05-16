@@ -8,7 +8,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="flazz"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -63,7 +63,6 @@ CASE_SENSITIVE="true"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
-# Which plugins would you like to load?
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
@@ -116,8 +115,11 @@ git_branch_info() {
     fi
 }
 
-precmd() {
-        PROMPT="%B%F{9}%F{14}%n%F{9}:%F{11}%~%F{10}$(git_branch_info)%F{9}%b%f $ "
-}
+# precmd() {
+        #PROMPT="%B%F{9}%F{14}%n%F{9}:%F{11}%~%F{10}$(git_branch_info)%F{9}%b%f $ "
+# }
 autoload -U compinit && compinit
 unsetopt share_history
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

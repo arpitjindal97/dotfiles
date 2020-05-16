@@ -13,3 +13,6 @@
 [submodule "zsh/zsh-completions"]
 	path = zsh/zsh-completions
 	url = https://github.com/zsh-users/zsh-completions
+[submodule "zsh/powerlevel10k"]
+	path = zsh/powerlevel10k
+	url = https://gitee.com/romkatv/powerlevel10k.git

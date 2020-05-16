@@ -18,17 +18,22 @@ function Install() {
         ln -s ${PWD}/fontconfig ~/.config/fontconfig
         ln -s ${PWD}/Xresources ~/.Xresources
         ln -s ${PWD}/fonts ~/.fonts
+    elif [ $uname == "Darwin" ];
+    then
+        cp -f ${PWD}/fonts/MesloLGS-NF/* ~/Library/Fonts/
     fi
 
     echo "Removing Old Links"
-    rm -r ~/.vimrc ~/.tmux.conf ~/.zshrc ~/.oh-my-zsh ~/.tmux &> /dev/null
+    rm -r ~/.vimrc ~/.tmux.conf ~/.zshrc ~/.p10k.zsh ~/.oh-my-zsh ~/.tmux &> /dev/null
     echo "Creating Symbolic links for files"
     ln -sf ${PWD}/vimrc ~/.vimrc
     ln -sf ${PWD}/tmux.conf ~/.tmux.conf
     ln -sf ${PWD}/tmux ~/.tmux
     ln -sf ${PWD}/zshrc ~/.zshrc
+    ln -sf ${PWD}/p10k.zsh ~/.p10k.zsh
     ln -sf ${PWD}/ohmyzsh ~/.oh-my-zsh
-    ln -sf ${PWD}/zsh/zsh-completions ~/.oh-my-zsh/custom/plugins/zsh-completions
+    ln -sFh ${PWD}/zsh/zsh-completions ~/.oh-my-zsh/custom/plugins/zsh-completions
+    ln -sFh ${PWD}/zsh/powerlevel10k ~/.oh-my-zsh/custom/themes/powerlevel10k
 
     echo "Done"
 
