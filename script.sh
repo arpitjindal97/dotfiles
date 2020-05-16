@@ -4,10 +4,9 @@ echo "Operating System detected: $uname"
 
 function Install() {
 
-    echo "Updating Submodules"
-    git submodule update --init
-
     echo "Performing Clean Install"
+
+    UpdateSubmodules
 
     echo "Removing Old Links"
     rm -r ~/.vimrc ~/.tmux.conf ~/.zshrc ~/.p10k.zsh ~/.oh-my-zsh ~/.tmux &> /dev/null
@@ -34,8 +33,10 @@ function Install() {
     elif [ $uname == "Darwin" ];
     then
         echo "Copying fonts to ~/Library/Fonts/"
-        cp -f ${PWD}/fonts/MesloLGS-NF/* ~/Library/Fonts/
+        cp -f ${PWD}/fonts/*/*.ttf ~/Library/Fonts/
     fi
+
+    UpdateVimPlug
 
     echo "Done"
 
@@ -45,19 +46,27 @@ function Update() {
     echo "Fetching from Upstream"
     git fetch --progress
     git reset --hard origin/master
-    git submodule update --init --recursive --progress
+    UpdateSubmodules
+    UpdateVimPlug
     echo "Done"
 }
 
 function UpdateInternal() {
-    echo "Updating Submodules..."
+    echo "Fast-Forwarding Submodules to Upstream ..."
     git submodule foreach git fetch --progress
     git submodule foreach git reset --hard origin/master
-    echo "Updating Vim Plugins ..."
-    vim -c "PlugUpdate|qa!"
     echo "Done"
 }
 
+function UpdateSubmodules() {
+    echo "Updating Submodules ..."
+    git submodule update --init --recursive --progress
+}
+
+function UpdateVimPlug() {
+    echo "Updating Vim Plugins ..."
+    vim -c "PlugUpdate|qa!"
+}
 
 if [ $1 == "install" ];
 then

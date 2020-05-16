@@ -25,6 +25,7 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'fatih/vim-go'
 Plug 'godlygeek/tabular'
 Plug 'mhinz/vim-signify'
+Plug 'darfink/vim-plist'
 
 call plug#end()
 
