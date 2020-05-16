@@ -3,7 +3,7 @@
 This repo contains my dotfiles. Use below command to get started quickly
 
     cd ~
-    git clone --recursive https://github.com/arpitjindal97/dotfiles.git dotfiles
+    git clone https://github.com/arpitjindal97/dotfiles.git dotfiles
     cd dotfiles
     make install
 
@@ -12,26 +12,28 @@ This repo contains my dotfiles. Use below command to get started quickly
 Install below tools first before cloning the repo
 
 - `zsh`
-- `xsel`
-- `gvim`
+- `xsel` or `xclip` (only Linux)
+- `vim` (prefer `gvim`)
+- `tmux`
 
 ## Fonts
 
-- [github.com/powerline/fonts.git](https://www.archlinux.org/packages/community/x86_64/powerline-fonts/)
-- [github.com/belluzj/fantasque-sans.git](https://aur.archlinux.org/packages/ttf-fantasque-sans-mono/)
-- [pagure.io/liberation-fonts.git](https://www.archlinux.org/packages/community/any/ttf-liberation/)
+- [github.com/romkatv/powerlevel10k-media/MesloLGS NF](https://github.com/romkatv/powerlevel10k-media/)
+- [github.com/belluzj/fantasque-sans](https://github.com/belluzj/fantasque-sans)
 
 ## Tools Used
 
-- [Termite](https://github.com/thestinger/termite/)/[urxvt](http://software.schmorp.de/pkg/rxvt-unicode.html)
-- [Gvim](https://github.com/vim/vim)
+- [termite](https://github.com/thestinger/termite/)
+- [urxvt](http://software.schmorp.de/pkg/rxvt-unicode.html)
+- [vim](https://github.com/vim/vim)
 - [tmux](https://github.com/tmux/tmux)
-- [xsel](https://github.com/kfish/xsel)
 - [zsh](https://github.com/zsh-users/zsh)
+- [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh)
+- [powerlevel10k](https://github.com/romkatv/powerlevel10k)
 
-## Update submodules
+## Update configuration
 
-Vim plugins are cloned as submodules. Update them once in a week.
+To make your dotfiles in sync with mine, use the below command. It will fetch from upstream here.
 
     cd ~/dotfiles
     make update
@@ -42,22 +44,23 @@ Vim plugins are cloned as submodules. Update them once in a week.
 
 ## Plugins used in Vim
 
-- [github.com/scrooloose/nerdtree](https://github.com/scrooloose/nerdtree.git)
-- [github.com/Xuyuanp/nerdtree-git-plugin](https://github.com/Xuyuanp/nerdtree-git-plugin.git)
-- [github.com/elzr/vim-json](https://github.com/elzr/vim-json.git)
-- [github.com/vim-airline/vim-airline](https://github.com/vim-airline/vim-airline.git)
+- [github.com/scrooloose/nerdtree](https://github.com/scrooloose/nerdtree)
+- [github.com/Xuyuanp/nerdtree-git-plugin](https://github.com/Xuyuanp/nerdtree-git-plugin)
+- [github.com/elzr/vim-json](https://github.com/elzr/vim-json)
+- [github.com/vim-airline/vim-airline](https://github.com/vim-airline/vim-airline)
 - [github.com/vim-airline/vim-airline-themes](https://github.com/vim-airline/vim-airline-themes)
-- [github.com/airblade/vim-gitgutter](https://github.com/airblade/vim-gitgutter.git)
+- [github.com/airblade/vim-gitgutter](https://github.com/airblade/vim-gitgutter)
 - [github.com/tpope/vim-fugitive](https://github.com/tpope/vim-fugitive)
 - [github.com/ctrlpvim/ctrlp](https://github.com/ctrlpvim/ctrlp.vim)
 - [github.com/jiangmiao/auto-pairs](https://github.com/jiangmiao/auto-pairs)
 - [github.com/tpope/vim-surround](https://github.com/tpope/vim-surround)
 - [github.com/Yggdroot/indentLine](https://github.com/Yggdroot/indentLine)
 - [github.com/ntpeters/vim-better-whitespace](https://github.com/ntpeters/vim-better-whitespace)
-- [github.com/altercation/vim-colors-solarized](https://github.com/altercation/vim-colors-solarized.git)
-- [github.com/fatih/vim-go](https://github.com/fatih/vim-go.git)
-- [github.com/godlygeek/tabular](https://github.com/godlygeek/tabular.git)
-- [github.com/mhinz/vim-signify](https://github.com/plasticboy/vim-markdown.git)
+- [github.com/altercation/vim-colors-solarized](https://github.com/altercation/vim-colors-solarized)
+- [github.com/fatih/vim-go](https://github.com/fatih/vim-go)
+- [github.com/godlygeek/tabular](https://github.com/godlygeek/tabular)
+- [github.com/mhinz/vim-signify](https://github.com/plasticboy/vim-markdown)
+- [github.com/darfink/vim-plist](https://github.com/darfink/vim-plist)
 
 ## Keybindings
 
