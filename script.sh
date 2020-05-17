@@ -19,6 +19,7 @@ function Install() {
     ln -sf ${PWD}/p10k.zsh ~/.p10k.zsh
     ln -sf ${PWD}/ohmyzsh ~/.oh-my-zsh
     ln -sfn ${PWD}/zsh/zsh-completions ~/.oh-my-zsh/custom/plugins/zsh-completions
+    ln -sfn ${PWD}/zsh/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
     ln -sfn ${PWD}/zsh/powerlevel10k ~/.oh-my-zsh/custom/themes/powerlevel10k
 
     if [ $uname == "Linux" ];

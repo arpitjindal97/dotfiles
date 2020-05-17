@@ -12,7 +12,7 @@ Plug 'junegunn/vim-easy-align'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'elzr/vim-json'
-Plug 'vim-airline/vim-airline', { 'tag': 'v0.10'  }
+Plug 'vim-airline/vim-airline', { 'tag': 'v0.11'  }
 Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
