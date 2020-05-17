@@ -47,9 +47,7 @@ function Update() {
     echo "Fetching from Upstream"
     git fetch --progress
     git reset --hard origin/master
-    UpdateSubmodules
-    UpdateVimPlug
-    echo "Done"
+    Install
 }
 
 function UpdateInternal() {
