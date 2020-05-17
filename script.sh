@@ -60,13 +60,15 @@ function UpdateInternal() {
 }
 
 function UpdateSubmodules() {
-    echo "Updating Submodules ..."
+    echo "Updating Submodules"
     git submodule update --init --recursive --progress
 }
 
 function UpdateVimPlug() {
-    echo "Updating Vim Plugins ..."
+    echo "Updating Vim Plugins"
     vim -c "PlugUpdate|qa!"
+    echo "Upgrading Vim Plug"
+    vim -c "PlugUpgrade|qa!"
 }
 
 if [ $1 == "install" ];
