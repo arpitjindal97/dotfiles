@@ -100,26 +100,15 @@ bindkey -v
 
 eval $(ssh-agent) &> /dev/null
 
-export GOPATH="$HOME/go"
-export PATH="$HOME/.local/bin:$GOPATH/bin:/usr/local/opt/go@1.13/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 export GPG_TTY=$(tty)
 export LC_ALL=en_US.UTF-8
 
-git_branch_info() {
-    info=$(git symbolic-ref HEAD 2> /dev/null)
-    if (( $? == 0  )) ; then
-        info=" $(echo $info| cut -d \/ -f 3)"
-        echo $info
-    else
-        echo ""
-    fi
-}
-
-# precmd() {
-        #PROMPT="%B%F{9}%F{14}%n%F{9}:%F{11}%~%F{10}$(git_branch_info)%F{9}%b%f $ "
-# }
 autoload -U compinit && compinit
 unsetopt share_history
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# To customize anything in zsh, provide ~/.profile.zsh
+[[ ! -f ~/.profile.zsh ]] || source ~/.profile.zsh

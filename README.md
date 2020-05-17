@@ -1,11 +1,13 @@
 # dotfiles
 
-This repo contains my dotfiles. Use below command to get started quickly
+This repo contains my dotfiles. It works on both MacOS and Linux. Use below command to get started quickly
 
-    cd ~
-    git clone https://github.com/arpitjindal97/dotfiles.git dotfiles
-    cd dotfiles
-    make install
+```bash
+cd ~
+git clone https://github.com/arpitjindal97/dotfiles.git dotfiles
+cd dotfiles
+make install
+```
 
 ## Prerequisite
 
@@ -13,8 +15,9 @@ Install below tools first before cloning the repo
 
 - `zsh`
 - `xsel` or `xclip` (only Linux)
-- `vim` (prefer `gvim`)
+- `vim`
 - `tmux`
+- `git`
 
 ## Fonts
 
@@ -28,43 +31,21 @@ Install below tools first before cloning the repo
 - [vim](https://github.com/vim/vim)
 - [tmux](https://github.com/tmux/tmux)
 - [zsh](https://github.com/zsh-users/zsh)
-- [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh)
-- [powerlevel10k](https://github.com/romkatv/powerlevel10k)
 
 ## Update configuration
 
 To make your dotfiles in sync with mine, use the below command. It will fetch from upstream here.
 
-    cd ~/dotfiles
-    make update
+```bash
+cd ~/dotfiles
+make update
+```
 
 ## Screenshot
 
 ![screenshot](screenshot.png?raw=true)
 
-## Plugins used in Vim
-
-- [github.com/scrooloose/nerdtree](https://github.com/scrooloose/nerdtree)
-- [github.com/Xuyuanp/nerdtree-git-plugin](https://github.com/Xuyuanp/nerdtree-git-plugin)
-- [github.com/elzr/vim-json](https://github.com/elzr/vim-json)
-- [github.com/vim-airline/vim-airline](https://github.com/vim-airline/vim-airline)
-- [github.com/vim-airline/vim-airline-themes](https://github.com/vim-airline/vim-airline-themes)
-- [github.com/airblade/vim-gitgutter](https://github.com/airblade/vim-gitgutter)
-- [github.com/tpope/vim-fugitive](https://github.com/tpope/vim-fugitive)
-- [github.com/ctrlpvim/ctrlp](https://github.com/ctrlpvim/ctrlp.vim)
-- [github.com/jiangmiao/auto-pairs](https://github.com/jiangmiao/auto-pairs)
-- [github.com/tpope/vim-surround](https://github.com/tpope/vim-surround)
-- [github.com/Yggdroot/indentLine](https://github.com/Yggdroot/indentLine)
-- [github.com/ntpeters/vim-better-whitespace](https://github.com/ntpeters/vim-better-whitespace)
-- [github.com/altercation/vim-colors-solarized](https://github.com/altercation/vim-colors-solarized)
-- [github.com/fatih/vim-go](https://github.com/fatih/vim-go)
-- [github.com/godlygeek/tabular](https://github.com/godlygeek/tabular)
-- [github.com/mhinz/vim-signify](https://github.com/plasticboy/vim-markdown)
-- [github.com/darfink/vim-plist](https://github.com/darfink/vim-plist)
-
-## Keybindings
-
-### Tmux
+## Tmux
 
 | Key Combination | Function                           |
 | --------------- | --------                           |
@@ -85,9 +66,16 @@ To make your dotfiles in sync with mine, use the below command. It will fetch fr
 | copy-mode-vi v  | begin-selection                    |
 | copy-mode-vi y  | copy-buffer to clipboard (xsel)    |
 
-Rest all other key binding are samme. I am also using [hdaly/tmux-better-mouse-mode](https://github.com/hdaly/tmux-better-mouse-mode) plugin for easy mouse movements
+Rest all other key binding are samme.
 
-### Vim
+Plugin Manager: [tpm](https://github.com/tmux-plugins/tpm)
+
+### Plugins used
+
+- [github.com/tmux-plugins/tmux-battery](https://github.com/tmux-plugins/tmux-battery)
+- [github.com/tmux-plugins/tmux-yank](https://github.com/tmux-plugins/tmux-yank)
+
+## Vim
 
 | Key | Function           |
 | --- | --------           |
@@ -95,4 +83,38 @@ Rest all other key binding are samme. I am also using [hdaly/tmux-better-mouse-m
 
 I haven't set any key binding for vim. All the commands are as default provided by the plugins. Check their documentation. 
 
+Plugin Manager: [vim-plug](https://github.com/junegunn/vim-plug)
 
+### Plugins used
+
+- [github.com/scrooloose/nerdtree](https://github.com/scrooloose/nerdtree)
+- [github.com/Xuyuanp/nerdtree-git-plugin](https://github.com/Xuyuanp/nerdtree-git-plugin)
+- [github.com/elzr/vim-json](https://github.com/elzr/vim-json)
+- [github.com/vim-airline/vim-airline](https://github.com/vim-airline/vim-airline)
+- [github.com/vim-airline/vim-airline-themes](https://github.com/vim-airline/vim-airline-themes)
+- [github.com/airblade/vim-gitgutter](https://github.com/airblade/vim-gitgutter)
+- [github.com/tpope/vim-fugitive](https://github.com/tpope/vim-fugitive)
+- [github.com/ctrlpvim/ctrlp](https://github.com/ctrlpvim/ctrlp.vim)
+- [github.com/jiangmiao/auto-pairs](https://github.com/jiangmiao/auto-pairs)
+- [github.com/tpope/vim-surround](https://github.com/tpope/vim-surround)
+- [github.com/Yggdroot/indentLine](https://github.com/Yggdroot/indentLine)
+- [github.com/ntpeters/vim-better-whitespace](https://github.com/ntpeters/vim-better-whitespace)
+- [github.com/altercation/vim-colors-solarized](https://github.com/altercation/vim-colors-solarized)
+- [github.com/fatih/vim-go](https://github.com/fatih/vim-go)
+- [github.com/godlygeek/tabular](https://github.com/godlygeek/tabular)
+- [github.com/mhinz/vim-signify](https://github.com/plasticboy/vim-markdown)
+- [github.com/darfink/vim-plist](https://github.com/darfink/vim-plist)
+
+## Zsh
+
+Please do not edit `zshrc` file. If you want to set some environment variable or override any configuration then provide `~/.profile.zsh` file. 
+It will get sourced automatically by `zshrc`
+
+### Addons used
+
+- [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh)
+- [powerlevel10k](https://github.com/romkatv/powerlevel10k)
+- [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
+- [zsh-completions](https://github.com/zsh-users/zsh-completions)
+
+Feel Free to use them and provide PRs for any improvement
