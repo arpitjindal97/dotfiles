@@ -98,8 +98,6 @@ export LANG=en_US.UTF-8
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 bindkey -v
 
-eval $(ssh-agent) &> /dev/null
-
 export PATH="$HOME/.local/bin:$PATH"
 export GPG_TTY=$(tty)
 export LC_ALL=en_US.UTF-8
