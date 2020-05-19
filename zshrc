@@ -67,7 +67,7 @@ CASE_SENSITIVE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker docker-compose gcloud zsh-completions zsh-autosuggestions)
+plugins=($plugins git zsh-completions zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -108,5 +108,3 @@ unsetopt share_history
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# To customize anything in zsh, provide ~/.profile.zsh
-[[ ! -f ~/.profile.zsh ]] || source ~/.profile.zsh

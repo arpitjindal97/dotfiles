@@ -107,8 +107,10 @@ Plugin Manager: [vim-plug](https://github.com/junegunn/vim-plug)
 
 ## Zsh
 
-Please do not edit `zshrc` file. If you want to set some environment variable or override any configuration then provide `~/.profile.zsh` file. 
-It will get sourced automatically by `zshrc`
+Vim keybindings are used. Please do not edit `zshrc` file. If you want to set some environment variable then provide `~/.zshenv` file. 
+It will get sourced automatically. You can see a sample `.zshenv` file [here](https://gist.github.com/arpitjindal97/d07fdf75433a288e921587c910bd3d73)
+
+Have a look at different types of files at [zsh.sourceforge.net/Intro/intro_3.html](http://zsh.sourceforge.net/Intro/intro_3.html)
 
 ### Addons used
 
@@ -117,4 +119,4 @@ It will get sourced automatically by `zshrc`
 - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
 - [zsh-completions](https://github.com/zsh-users/zsh-completions)
 
-Feel Free to use them and provide PRs for any improvement
+**Feel free to use them and provide PRs for any improvement**
