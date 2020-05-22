@@ -2,3 +2,4 @@ vim/bundle/*/doc/tags
 *.swp
 .uuid
 .DS_Store
+*.log
