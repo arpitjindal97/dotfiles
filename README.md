@@ -47,6 +47,12 @@ make update
 
 ## Tmux
 
+If you default shell is not `zsh` and you try to open tmux and It is not be able to render powerline symbols. Then type below command then try again.
+
+```bash
+export LC_ALL=en_US.UTF-8
+```
+
 | Key Combination | Function                           |
 | --------------- | --------                           |
 | prefix          | C-a                                |
