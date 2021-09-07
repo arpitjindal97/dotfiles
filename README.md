@@ -9,6 +9,8 @@ cd dotfiles
 make install
 ```
 
+Note that Fantasque Sans is currently broken and MesloLGS NF needs to be set as the font for the theme to work properly
+
 ## Prerequisite
 
 Install below tools first before cloning the repo
@@ -18,6 +20,7 @@ Install below tools first before cloning the repo
 - `vim`
 - `tmux`
 - `git`
+- `Windows Terminal` (For Multi-Tab WSL)
 
 ## Fonts
 
@@ -90,6 +93,21 @@ Plugin Manager: [tpm](https://github.com/tmux-plugins/tpm)
 I haven't set any key binding for vim. All the commands are as default provided by the plugins. Check their documentation. 
 
 Plugin Manager: [vim-plug](https://github.com/junegunn/vim-plug)
+
+## Windows Subsystem for Linux (WSL)
+
+In order to correctly render the symbols on the WSL subsystem a few additional steps must be taken.
+
+Clone the respository from Powershell on Winwdows or Download the font "MesloLFS-NF" directly from the repository 
+Install for all Users (requires admin escalation)
+Close all windows of the Windows Terminal
+
+If using the default Ubuntu terminal window, right click title-bar and select Properties > Font
+If using the Windows Terminal (Preview or Stable), click the dropdown menu arrow, Settings > Ubuntu > Appearance
+
+Set font in Ubuntu terminal to "MelsoLFS NF"
+
+For TMUX like support please see Windows Terminal recommendation, you can install via the [Windows Store](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab) or the [Official Github](https://github.com/microsoft/terminal)
 
 ### Plugins used
 
