@@ -24,6 +24,10 @@ Install below tools first before cloning the repo
 - [github.com/romkatv/powerlevel10k-media/MesloLGS NF](https://github.com/romkatv/powerlevel10k-media/)
 - [github.com/belluzj/fantasque-sans](https://github.com/belluzj/fantasque-sans)
 
+**Note:**
+ - MesloLGS NF needs to be set as the font in terminal you are using for the theme to work properly
+ - On Windows, Download & Install the font "MesloLFS-NF" directly from the repository
+
 ## Tools Used
 
 - [termite](https://github.com/thestinger/termite/)
