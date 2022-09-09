@@ -1,6 +1,6 @@
 
 if empty(glob('~/.vim/autoload/plug.vim'))
-    silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    silent !curl --silent -fLo ~/.vim/autoload/plug.vim --create-dirs
                 \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
     autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
@@ -9,8 +9,8 @@ endif
 call plug#begin('~/.vim/plugged')
 
 Plug 'junegunn/vim-easy-align'
-Plug 'scrooloose/nerdtree'
-Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'preservim/nerdtree'
+"Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'elzr/vim-json'
 Plug 'vim-airline/vim-airline', { 'tag': 'v0.11'  }
 Plug 'vim-airline/vim-airline-themes'
@@ -22,7 +22,7 @@ Plug 'tpope/vim-surround'
 Plug 'Yggdroot/indentLine'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'altercation/vim-colors-solarized'
-Plug 'fatih/vim-go'
+"Plug 'fatih/vim-go'
 Plug 'godlygeek/tabular'
 Plug 'mhinz/vim-signify'
 Plug 'darfink/vim-plist'
@@ -78,9 +78,11 @@ let g:airline_solarized_bg='dark'
 
 " ===================== vim-colors-solorized ===================
 
-let g:solarized_termcolors=256
-set background=dark
-colorscheme solarized
+if !empty(glob('~/.vim/plugged/vim-colors-solarized/colors/solarized.vim'))
+    let g:solarized_termcolors=256
+    set background=dark
+    colorscheme solarized
+endif
 
 " ========================== indentLine =========================
 

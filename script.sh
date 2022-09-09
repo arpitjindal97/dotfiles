@@ -1,3 +1,5 @@
+#!/bin/bash
+
 uname=$(uname)
 
 echo "Operating System detected: $uname"
@@ -9,7 +11,7 @@ function Install() {
     UpdateSubmodules
 
     echo "Removing Old Links"
-    rm -r ~/.vimrc ~/.tmux.conf ~/.zshrc ~/.p10k.zsh ~/.oh-my-zsh ~/.tmux &> /dev/null
+    rm -rf ~/.vim ~/.vimrc ~/.tmux.conf ~/.zshrc ~/.p10k.zsh ~/.oh-my-zsh ~/.tmux &> /dev/null
 
     echo "Creating Symbolic links for files"
     ln -sf ${PWD}/vimrc ~/.vimrc
@@ -64,9 +66,9 @@ function UpdateSubmodules() {
 
 function UpdateVimPlug() {
     echo "Updating Vim Plugins"
-    vim -c "PlugUpdate|qa!"
+    sh -c 'vim -c "PlugUpdate|qa!"'
     echo "Upgrading Vim Plug"
-    vim -c "PlugUpgrade|qa!"
+    sh -c 'vim -c "PlugUpgrade|qa!"'
 }
 
 if [ $1 == "install" ];
