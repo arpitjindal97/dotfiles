@@ -11,7 +11,7 @@ function Install() {
     UpdateSubmodules
 
     echo "Removing Old Links"
-    rm -rf ~/.vim ~/.vimrc ~/.tmux.conf ~/.zshrc ~/.p10k.zsh ~/.oh-my-zsh ~/.tmux &> /dev/null
+    rm -rf ~/.vimrc ~/.tmux.conf ~/.zshrc ~/.p10k.zsh ~/.oh-my-zsh ~/.tmux &> /dev/null
 
     echo "Creating Symbolic links for files"
     ln -sf ${PWD}/vimrc ~/.vimrc
