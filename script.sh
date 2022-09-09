@@ -24,6 +24,9 @@ function Install() {
     ln -sfn ${PWD}/zsh/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
     ln -sfn ${PWD}/zsh/powerlevel10k ~/.oh-my-zsh/custom/themes/powerlevel10k
 
+    echo "Fixing chmod for zsh"
+    chmod -R 755 ${PWD}/ohmyzsh ${PWD}/zsh
+
     if [ $uname == "Linux" ];
     then
         mkdir -p ~/.config
