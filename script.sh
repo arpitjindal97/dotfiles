@@ -64,7 +64,7 @@ function UpdateInternal() {
 
 function UpdateSubmodules() {
     echo "Updating Submodules"
-    git submodule update --init --recursive --progress
+    git submodule update --init --recursive --progress --force
 }
 
 function UpdateVimPlug() {
