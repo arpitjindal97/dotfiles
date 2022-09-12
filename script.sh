@@ -25,7 +25,8 @@ function Install() {
     ln -sfn ${PWD}/zsh/powerlevel10k ~/.oh-my-zsh/custom/themes/powerlevel10k
 
     echo "Fixing chmod for zsh"
-    chmod -R 755 ${PWD}/ohmyzsh ${PWD}/zsh
+    mkdir -p ${PWD}/ohmyzsh/cache/completions    
+    chmod -R 755 ${PWD}/ohmyzsh ${PWD}/zsh ${PWD}/ohmyzsh/cache/completions
 
     if [ $uname == "Linux" ];
     then
