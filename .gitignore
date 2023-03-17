@@ -3,3 +3,4 @@ vim/bundle/*/doc/tags
 .uuid
 .DS_Store
 *.log
+/.idea
